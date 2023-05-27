@@ -10,10 +10,6 @@ module.exports = {
       banortealertas: '#FF671B',
       banorteavisos: '#FFA400',
     },
-    fontFamily: {
-      gotham: ['Gotham', 'sans-serif'],
-      roboto: ['Roboto', 'sans-serif'],
-    },
     extend: {
       aspectRatio: {
         '4/1': '4 / 1',

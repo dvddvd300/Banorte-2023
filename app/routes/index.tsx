@@ -54,7 +54,8 @@ export default function Index() {
           Ofrecemos una amplia gama de servicios financieros personalizados para satisfacer las necesidades de nuestros clientes,
           respaldado por más de 100 años de trayectoria, una sólida reputación y un compromiso con el desarrollo económico y social de México.
         </p>
-        <button className="btn  bg-red-500">¡Ingresa a tu portal!</button>
+        <button className="btn  bg-rojobanorte
+        ">¡Ingresa a tu portal!</button>
 
 
         </div>
