@@ -198,4 +198,3 @@ export function ErrorBoundary({ error }: { error: Error }) {
 
   );
 }
-
