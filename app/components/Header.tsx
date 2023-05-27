@@ -20,35 +20,35 @@ export function Header({ t }: any) {
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" 
-                   className="h-5 w-5" 
-                   fill="none" 
-                   viewBox="0 0 24 24" 
-                   stroke="currentColor"><path 
-                   strokeLinecap="round" 
-                   strokeLinejoin="round" 
-                   strokeWidth="2" 
-                   d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"><path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
 
-            <ul 
-              tabIndex={0} 
+            <ul
+              tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-              
-            <li><Link to="/preferente" className="text-base-content">
-              {t("preferente")}
+
+              <li><Link to="/preferente" className="text-base-content">
+                {t("preferente")}
               </Link></li>
               <li><Link to="/pymes" className="text-base-content">
-              {t("pymes")}
+                {t("pymes")}
               </Link></li>
               <li><Link to="/empresas" className="text-base-content">
-              {t("empresas")}
+                {t("empresas")}
               </Link></li>
               <li><Link to="/gobierno" className="text-base-content">
-              {t("gobierno")}
+                {t("gobierno")}
               </Link></li>
               <li><Link to="/CasaDeBolsa" className="text-base-content">
-              {t("casa de bolsa")}
+                {t("casa de bolsa")}
               </Link></li>
               {/* <li tabIndex={0}>
                   <a className="justify-between">
@@ -62,9 +62,11 @@ export function Header({ t }: any) {
                 </li> */}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl"><div className="flex-none px-2 mx-2">
-        <span className="text-lg font-bold">Banorte</span>
-      </div></a>
+  
+          <a href="/" className="-m-1.5 p-1.5">
+            <span className="sr-only">Banorte</span>
+            <img className="object-contain max-h-16 w-auto" src="/static/logow.png" alt="" />
+          </a>
         </div>
 
         <div className="navbar-center hidden lg:flex">
