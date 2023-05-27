@@ -3844,10 +3844,6 @@ html {
   background-color: hsl(var(--s) / var(--tw-bg-opacity));
 }
 
-.bg-\[height-12\] {
-  background-color: height-12;
-}
-
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
 }
@@ -3858,10 +3854,6 @@ html {
 
 .bg-\[url\(\/static\/patern\.png\)\] {
   background-image: url(/static/patern.png);
-}
-
-.bg-\[43\.5px\] {
-  background-position: 43.5px;
 }
 
 .bg-repeat-x {
@@ -3998,14 +3990,6 @@ html {
 
 .pr-10 {
   padding-right: 2.5rem;
-}
-
-.pb-\[5px\] {
-  padding-bottom: 5px;
-}
-
-.pt-\[8px\] {
-  padding-top: 8px;
 }
 
 .text-center {
