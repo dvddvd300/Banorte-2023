@@ -22,9 +22,6 @@ functions/_assets/*.css
 # Custom Build
 /dist
 
-# Tailwind
-/app/styles/tailwind.css
-
 # Cypress
 /cypress/videos
 /cypress/screenshots
