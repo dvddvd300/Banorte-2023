@@ -1,11 +1,30 @@
-export function Footer ({ t }: { t: any }) {
-    return (
-      <footer className="p-4 footer bg-base-300 text-base-content footer-center">
-          {/* <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p> */}
-          <a className="link" href="https://forms.gle/e4kCyFYwiMv2tDgm9">
-            {t("Feedbacks")}
-          </a>
-          <span className="text-base-200">v 0.687 - icons by Icons8</span>
-      </footer>
-    );
+export function Footer({ t }: { t: any }) {
+  return (
+    <footer className="footer text-white p-10 bg-rojobanorte text-[color:white]">
+      <div>
+        <img src="../static/Banorte-Logo.png" className="h-25 w-60" alt="Banorte" />
+      </div>
+      <div>
+        <span className="footer-title  ">Servicios</span>
+        <a className="link link-hover ">Tarjetas</a>
+        <a className="link link-hover ">Prestamos</a>
+        <a className="link link-hover ">Hipotecas</a>
+        <a className="link link-hover ">Inversiones</a>
+      </div>
+      <div>
+        <span className="footer-title">Banorte</span>
+        <a className="link link-hover">Nuestra Historia</a>
+        <a className="link link-hover">Contacto</a>
+        <a className="link link-hover">Trabajos</a>
+        <a className="link link-hover">Servicio al cliente</a>
+      </div>
+      <div>
+        <span className="footer-title">Legal</span>
+        <a className="link link-hover">Terminos y condiciones</a>
+        <a className="link link-hover">Politica de Privacidad</a>
+        <a className="link link-hover">Politica Cache</a>
+      </div>
+    </footer>
+
+  );
 }
