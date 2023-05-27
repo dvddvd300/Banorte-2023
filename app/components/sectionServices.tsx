@@ -19,10 +19,12 @@ export default function Example() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our team</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Servicios de vanguardia, justo lo que te mereces.</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
-            best results for our clients.
+          Los servicios de Banorte son excepcionales,
+          brindan soluciones financieras confiables y eficientes para cada persona.
+          Con una amplia gama de productos y oferta de servicios,
+          su atención al cliente es insuperable.
           </p>
         </div>
         <ul
