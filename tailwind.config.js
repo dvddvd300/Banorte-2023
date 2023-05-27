@@ -1,6 +1,19 @@
 module.exports = {
     content: ['./app/**/*.tsx', './app/**/*.ts'],
     theme: {
+      colors: {
+        rojobanorte: '#E30029',
+        grisbanorte: '#5B6670',
+        blancobanorte: '#FFFFFF',
+        banorteenlaces: '#EB0029',
+        banortepositivo: '#6CC04A',
+        banortealertas: '#FF671B',
+        banorteavisos: '#FFA400',
+      },
+      fontfamily: {
+        'gotham': ['Gotham', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+      },
       extend: {
         
         aspectRatio: {
