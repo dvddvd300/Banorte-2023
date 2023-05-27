@@ -1,39 +1,53 @@
-/**
- * By default, Remix will handle generating the HTTP Response for you.
- * You are free to delete this file if you'd like to, but if you ever want it revealed again, you can run `npx remix reveal` ✨
- * For more information, see https://remix.run/file-conventions/entry.server
- */
-
-import type { AppLoadContext, EntryContext } from "@remix-run/cloudflare";
+import type { EntryContext } from "@remix-run/cloudflare";
 import { RemixServer } from "@remix-run/react";
-import isbot from "isbot";
-import { renderToReadableStream } from "react-dom/server";
+import { createInstance } from "i18next";
+import { renderToString } from "react-dom/server";
+import { initReactI18next, I18nextProvider } from "react-i18next";
+import i18n from "./i18n"; // i18n configuration file
+import i18next from "./i18next.server";
+import Backend from "i18next-fs-backend";
 
 export default async function handleRequest(
   request: Request,
   responseStatusCode: number,
   responseHeaders: Headers,
   remixContext: EntryContext,
-  loadContext: AppLoadContext
 ) {
-  const body = await renderToReadableStream(
-    <RemixServer context={remixContext} url={request.url} />,
-    {
-      signal: request.signal,
-      onError(error: unknown) {
-        console.error(error);
-        responseStatusCode = 500;
+  // First, we create a new instance of i18next so every request will have a
+  // completely unique instance and not share any state
+  let instance = createInstance();
+
+  // Then we could detect locale from the request
+  let lng = await i18next.getLocale(request);
+  // And here we detect what namespaces the routes about to render want to use
+  let ns = i18next.getRouteNamespaces(remixContext);
+
+  await instance
+    .use(initReactI18next) // Tell our instance to use react-i18next
+    .use(Backend) // Setup our backend
+    .init({
+      ...i18n, // spread the configuration
+      lng, // The locale we detected above
+      ns, // The namespaces the routes about to render wants to use
+      backend: {
+        loadPath: "./public/locales/{{lng}}/{{ns}}.json",
       },
-    }
+    });
+
+  // Then you can render your app wrapped in the I18nextProvider as in the
+  // entry.client file
+  let markup = renderToString(
+    <I18nextProvider i18n={instance}>
+      <RemixServer context={remixContext} url={request.url} />
+    </I18nextProvider>
   );
 
-  if (isbot(request.headers.get("user-agent"))) {
-    await body.allReady;
-  }
-
   responseHeaders.set("Content-Type", "text/html");
-  return new Response(body, {
-    headers: responseHeaders,
+  responseHeaders.set("X-powered-by", "experiencia360.net");
+
+
+  return new Response("<!DOCTYPE html>" + markup, {
     status: responseStatusCode,
+    headers: responseHeaders,
   });
 }

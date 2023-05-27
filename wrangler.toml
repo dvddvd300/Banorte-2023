@@ -1,2 +1,4 @@
-compatibility_date = "2022-04-05"
-compatibility_flags = ["streams_enable_constructors"]
+account_id = "458d483a0b3b4c9e0d93822930d53d9b"
+
+# [ secrets ] #
+NODE_ENV="development"

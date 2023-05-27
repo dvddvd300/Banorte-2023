@@ -1,43 +1,60 @@
-import type { LinksFunction } from "@remix-run/cloudflare";
-import { cssBundleHref } from "@remix-run/css-bundle";
+import { json, LinksFunction, LoaderFunction, MetaFunction } from "@remix-run/cloudflare";
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
+  useCatch,
+  useLoaderData,
 } from "@remix-run/react";
+import i18next from "~/i18next.server";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+// import { useChangeLanguage } from "remix-i18next";
+import { themeChange } from "theme-change";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 
-import stylesheet from "~/tailwind.css";
+import { i18nCookie } from "./i18nCookie.js"
+ 
+import stylesUrl from './styles/tailwind.css';
 
+export function useChangeLanguage(locale: string) { 
+  let { i18n } = useTranslation(); 
+  useEffect(() => { 
+    i18n.changeLanguage(locale); 
+  }, [locale, i18n]); 
+} 
 
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: stylesheet },
-];
+type LoaderData = { locale: string };
 
+export let loader: LoaderFunction = async ({ request }) => {
+  let locale = await i18next.getLocale(request);
+  return json<LoaderData>({ locale }, {
+    headers: { "Set-Cookie": await i18nCookie.serialize(locale) }
+  })
+};
 
-// export function useChangeLanguage(locale: string) { 
-//   let { i18n } = useTranslation(); 
-//   useEffect(() => { 
-//     i18n.changeLanguage(locale); 
-//   }, [locale, i18n]); 
-// } 
+export let links: LinksFunction = () => {
+  return [{ rel: 'stylesheet', href: stylesUrl }];
+};
 
-// type LoaderData = { locale: string };
-
-// export let loader: LoaderFunction = async ({ request }) => {
-//   let locale = await i18next.getLocale(request);
-//   return json<LoaderData>({ locale, domain, user }, {
-//     headers: { "Set-Cookie": await i18nCookie.serialize(locale) }
-//   })
-// };
+export let meta: MetaFunction = () => {
+  return {
+    charset: "utf-8",
+    title: "Experiencia360",
+    viewport: "width=device-width,initial-scale=1",
+  };
+};
 
 export default function App() {
-  // let { locale } = useLoaderData<LoaderData>();
-  // let { i18n } = useTranslation();
-  // let { t } = useTranslation();
-  // useChangeLanguage(locale);
+  let { locale, domain } = useLoaderData<LoaderData>();
+  let { i18n } = useTranslation();
+  let { t } = useTranslation();
+  useChangeLanguage(locale);
 
   useEffect(() => {
     themeChange(false)
@@ -83,16 +100,13 @@ function Document({ children, title, }: { children: React.ReactNode; title?: str
 }
 
 function Layout({ children }: React.PropsWithChildren<{}>) {
-  // let { locale } = useLoaderData<LoaderData>();
-  // let { i18n } = useTranslation();
+  let { locale } = useLoaderData<LoaderData>();
+  let { i18n } = useTranslation();
   let { t } = useTranslation();
 
   return (
     <>
-      {/* <Navbar domain="Layout" user={null} />
-      <main className="grow">{children}</main>
-      <ScrollRestoration />
-      <Footer /> */}
+    
       <div className="min-h-screen flex flex-col">
       <Header t={t} />
         <div className="grow flex flex-col">

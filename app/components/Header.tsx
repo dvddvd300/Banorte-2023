@@ -4,93 +4,9 @@ import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from 
 import { ReactI18NextChild } from "react-i18next";
 import { Theme } from "./choose-theme";
 
-function renderDomainCustomLogo(domain: string) {
-  if (domain === "localhost") {
-    return (
-      <div className="flex-none px-2 mx-2">
-        <span className="text-lg font-bold">Exp Dev</span>
-      </div>
-    );
-  }
-  if (domain === "experiencia360.net") {
-    return (
-      <div className="flex-none px-2 mx-2">
-        <span className="text-lg font-bold">Experiencia360</span>
-      </div>
-    );
-  }
-  if (domain === "remix-run-test") {
-    return (
-      <div className="flex-none px-2 mx-2">
-        <span className="text-lg font-bold">Remix Run Test</span>
-      </div>
-    );
-  }
-  if (domain === "remix-run-prod") {
-    return (
-      <div className="flex-none px-2 mx-2">
-        <span className="text-lg font-bold">Remix Run Prod</span>
-      </div>
-    );
-  }
-  return (
-    <div className="flex-none px-2 mx-2">
-      <span className="text-lg font-bold">Experiencia360</span>
-    </div>
-  );
-}
 
-function renderUsuario(user: any , t: any) {
-  if (user) {
-    // here the user is authenticated
 
-    return (
-      <div className="dropdown dropdown-end">
-        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-          <div className="w-10 rounded-full">
-            <img src={user?.profilephoto} alt="avatar" />
-          </div>
-        </label>
-        <div
-          tabIndex={0}
-          className="menu menu-compact dropdown-content mt-3 p-2 shadow-2xl rounded-box w-52 bg-base-200 text-base-content rounded-t-box rounded-b-box"
-        >
-          <div className="py-3 px-4">
-            <span className="block text-sm font-medium text-base-content">{user?.name ?? "username"}</span>
-            <span className="block text-sm text-base-content">{user?.email ?? "Email"}</span>
-          </div>
-          <ul
-            className="menu menu-compact gap-1"
-          >
-            {/* <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
-              </li> */}
-            {/* <li>
-                <a>Settings</a>
-              </li> */}
-            <Form action="/logout" method="post">
-
-              <li>
-                <button>
-                  <a className="text-base-content">{t("Logout")}</a>
-                </button>
-              </li>
-
-            </Form>
-          </ul>
-        </div>
-      </div>
-    );
-  } else {
-    // here the user is not authenticated
-    return (<div></div>)
-  }
-}
-
-export function Header({ domain, user, t }: any) {
+export function Header({ t }: any) {
    
 
   return (
@@ -123,7 +39,9 @@ export function Header({ domain, user, t }: any) {
                 </li> */}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">{renderDomainCustomLogo(domain)}</a>
+          <a className="btn btn-ghost normal-case text-xl"><div className="flex-none px-2 mx-2">
+        <span className="text-lg font-bold">Banorte</span>
+      </div></a>
         </div>
 
         <div className="navbar-center hidden lg:flex">
@@ -343,7 +261,6 @@ export function Header({ domain, user, t }: any) {
             </Link>
           </div> */}
 
-          {renderUsuario(user, t)}
 
           {/* <div className="flex-none">
                     <button className="btn btn-square btn-ghost">
