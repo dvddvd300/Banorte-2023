@@ -1,5 +1,8 @@
+
+
 export default function HeroMountain() {
     return (
+
         <div className="hero grow bg-base-200 rounded-xl" style={{ backgroundImage: `url("https://wallpapercave.com/wp/wp9554505.jpg")` }}>
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
