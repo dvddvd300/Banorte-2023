@@ -14,7 +14,9 @@ export function Header({ t }: any) {
       className="sticky top-0 z-30 flex h-16 w-full justify-center backdrop-blur transition-all duration-100 text-base-content"
       
       >
-      <nav className="navbar sticky mb-2 shadow-lg bg-neutral text-neutral-content rounded-box col-span-1 xl:col-span-3">
+      <nav className="navbar sticky shadow-lg bg-rojobanorte text-neutral-content col-span-1 xl:col-span-3
+      w-full h-18 bg-repeat-x bg-[url(/static/patern.png)]
+      " >
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -3794,6 +3794,14 @@ html {
   --tw-bg-opacity: 0.6;
 }
 
+.bg-\[url\(\/static\/patern\.png\)\] {
+  background-image: url(/static/patern.png);
+}
+
+.bg-repeat-x {
+  background-repeat: repeat-x;
+}
+
 .fill-current {
   fill: currentColor;
 }
