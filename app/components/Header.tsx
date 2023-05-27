@@ -11,11 +11,11 @@ export function Header({ t }: any) {
 
   return (
     <header 
-      className="sticky top-0 z-30 flex h-16 w-full justify-center backdrop-blur transition-all duration-100 text-base-content"
+      className="sticky top-0 z-30 flex h-16 w-full justify-center backdrop-blur transition-all duration-100 text-base-content "
       
       >
       <nav className="navbar sticky shadow-lg bg-rojobanorte text-neutral-content col-span-1 xl:col-span-3
-      w-full h-18 bg-repeat-x bg-[url(/static/patern.png)]
+      w-full h-18 bg-repeat-x bg-[url(/static/patern.png)] 
       " >
         <div className="navbar-start">
           <div className="dropdown">
@@ -35,14 +35,20 @@ export function Header({ t }: any) {
               tabIndex={0} 
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               
-            <li><Link to="/">
-              {t("Home")}
+            <li><Link to="/preferente" className="text-base-content">
+              {t("preferente")}
               </Link></li>
-              {/* <li><Link to="/d/e?n=-tec-">
-              {t("Events")}
-              </Link></li> */}
-              <li><Link to="/d/org?n=-tec-">
-              {t("Organizations")}
+              <li><Link to="/pymes" className="text-base-content">
+              {t("pymes")}
+              </Link></li>
+              <li><Link to="/empresas" className="text-base-content">
+              {t("empresas")}
+              </Link></li>
+              <li><Link to="/gobierno" className="text-base-content">
+              {t("gobierno")}
+              </Link></li>
+              <li><Link to="/CasaDeBolsa" className="text-base-content">
+              {t("casa de bolsa")}
               </Link></li>
               {/* <li tabIndex={0}>
                   <a className="justify-between">
@@ -63,15 +69,21 @@ export function Header({ t }: any) {
 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
-            <li><Link to="/">
-            {t("Home")}
-            </Link></li>
-            {/* <li><Link to="/d/e?n=-tec-">
-            {t("Events")}
-            </Link></li> */}
-            <li><Link to="/d/org?n=-tec-">
-            {t("Organizations")}
-            </Link></li>
+          <li><Link to="/preferente">
+              {t("preferente")}
+              </Link></li>
+              <li><Link to="/pymes">
+              {t("pymes")}
+              </Link></li>
+              <li><Link to="/empresas">
+              {t("empresas")}
+              </Link></li>
+              <li><Link to="/gobierno">
+              {t("gobierno")}
+              </Link></li>
+              <li><Link to="/CasaDeBolsa">
+              {t("casa de bolsa")}
+              </Link></li>
             {/* <li tabIndex={0}>
                 <a>
                   Parent
