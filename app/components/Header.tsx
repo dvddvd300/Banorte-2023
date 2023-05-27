@@ -72,63 +72,10 @@ export function Header({ t }: any) {
             <li><Link to="/d/org?n=-tec-">
             {t("Organizations")}
             </Link></li>
-            {/* <li tabIndex={0}>
-                <a>
-                  Parent
-                  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
-                </a>
-                <ul className="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li> */}
           </ul>
         </div>
 
         <div className="navbar-end">
-          {/* <div className="flex-1 lg:flex-none">
-                  <div className="form-control">
-                      <input type="text" placeholder="Search" className="input input-ghost" />
-                  </div>
-                </div> */}
-          {/* <div
-            title="Change Theme"
-            className="dropdown dropdown-end z-50"
-            tabIndex={0}
-          >
-            <div className="btn gap-1 normal-case btn-ghost">
-              <svg
-                width="20"
-                height="20"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="inline-block h-5 w-5 stroke-current md:h-6 md:w-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-                ></path>
-              </svg>
-              <span className="hidden md:inline">{t("Theme")}</span>
-              <svg
-                width="12px"
-                height="12px"
-                className="ml-1 hidden h-3 w-3 fill-current opacity-60 sm:inline-block"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 2048 2048"
-              >
-                <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-              </svg>
-            </div>
-            <div className="dropdown-content bg-base-200 text-base-content rounded-t-box rounded-b-box top-px max-h-96 h-[70vh] w-52 overflow-y-auto shadow-2xl mt-16">
-              <Theme />
-            </div>
-          </div> */}
-
-          {/* lang */}
           <div title="Change Language" className="dropdown dropdown-end">
             <div tabIndex={0} className="btn btn-ghost gap-1 normal-case">
               <svg
@@ -179,124 +126,11 @@ export function Header({ t }: any) {
                       <span className="badge badge-sm badge-ghost">beta</span>
                     </span>
                   </a>
-                </li>
-                {/* <li>
-                  <button className="flex">
-                    <img
-                      loading="lazy"
-                      width="20"
-                      height="20"
-                      alt="Indonesia"
-                      src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1ee-1f1e9.svg"
-                    />
-                    <span className="flex flex-1 justify-between">
-                      Indonesia
-                      <span className="badge badge-sm badge-ghost">Beta</span>
-                    </span>
-                  </button>
-                </li>
-                <li>
-                  <button className="flex">
-                    <img
-                      loading="lazy"
-                      width="20"
-                      height="20"
-                      alt="日本語"
-                      src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1ef-1f1f5.svg"
-                    />
-                    <span className="flex flex-1 justify-between">
-                      日本語
-                      <span className="badge badge-sm badge-ghost">ベータ</span>
-                    </span>
-                  </button>
-                </li>
-                <li>
-                  <button className="flex">
-                    <img
-                      loading="lazy"
-                      width="20"
-                      height="20"
-                      alt="한국어"
-                      src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1f0-1f1f7.svg"
-                    />
-                    <span className="flex flex-1 justify-between">한국어 </span>
-                  </button>
-                </li>
-                <li>
-                  <button className="flex">
-                    <img
-                      loading="lazy"
-                      width="20"
-                      height="20"
-                      alt="中文"
-                      src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1e8-1f1f3.svg"
-                    />
-                    <span className="flex flex-1 justify-between">
-                      中文
-                      <span className="badge badge-sm badge-ghost">测试版</span>
-                    </span>
-                  </button>
-                </li>
-                <li>
-                  <button className="flex">
-                    <img
-                      loading="lazy"
-                      width="20"
-                      height="20"
-                      alt="繁體中文"
-                      src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/svg/1f1f9-1f1fc.svg"
-                    />
-                    <span className="flex flex-1 justify-between">
-                      繁體中文
-                      <span className="badge badge-sm badge-ghost">測試版</span>
-                    </span>
-                  </button>
-               </li> */}
+                </li>  
               </ul>
             </div>
           </div>
-
-          {/* 
-          <div className="flex-none">
-            <Link
-              to="/d/e"
-              className="btn btn-square btn-ghost btn-sm rounded-btn"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="inline-block w-6 h-6 stroke-current"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                ></path>
-              </svg>
-            </Link>
-          </div> */}
-
-
-          {/* <div className="flex-none">
-                    <button className="btn btn-square btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
-                            </path>
-                        </svg>
-                    </button>
-                </div> */}
-          {/* <div className="flex-none">
-                    <div className="avatar">
-                        <div className="rounded-full w-10 h-10 m-1">
-                            <img src="https://i.pravatar.cc/500?img=32" />
-                        </div>
-                    </div>
-                </div> */}
-          {/* <a className="btn">Get started</a> */}
         </div>
-
       </nav>
     </header>
   );
