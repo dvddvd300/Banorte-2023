@@ -5,7 +5,9 @@ import Section from "~/components/sectionServices";
 import HeroMountain from "~/components/heroMountain";
 
 export let loader: LoaderFunction = async ({ request }) => {
-  return {};
+  let cf = request.cf;
+  return {
+    cf : cf,
 };
 
 export default function Index() {
