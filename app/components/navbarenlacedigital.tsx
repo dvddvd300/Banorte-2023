@@ -1,20 +1,19 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
+import { Fragment } from 'react';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-router-dom';
 
 const navigation = [
-  { name: 'Enlace Digital', href: '/tarjetascredito/enlace-digital', current: false },
-  { name: 'Enlace Personal Banorte', href: '/tarjetascredito/personal', current: false },
-  { name: 'Enlace Dolares', href: '/tarjetascredito/dolares', current: false },
-  { name: 'Suma Menores', href: '/tarjetascredito/menores', current: false },
-  { name: 'Mujer Banorte', href: '/tarjetascredito/mujer-banorte', current: false },
-  { name: 'Banorte Facil', href: '/tarjetascredito/banortefacil', current: false }
-  
-]
+  { name: 'Enlace Digital', href: '/enlacedigital/digital', current: false },
+  { name: 'Enlace Personal Banorte', href: '/enlacedigital/personal', current: false },
+  { name: 'Enlace Dólares', href: '/enlacedigital/dolares', current: false },
+  { name: 'Suma Menores', href: '/enlacedigital/menores', current: false },
+  { name: 'Mujer Banorte', href: '/enlacedigital/mujeres', current: false },
+  { name: 'Banorte Fácil', href: '/enlacedigital/facil', current: false },
+];
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function NavBarTarjetas() {
@@ -38,9 +37,9 @@ export default function NavBarTarjetas() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
                       className={classNames(
                         item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                         'rounded-md px-3 py-2 text-sm font-medium'
@@ -48,7 +47,7 @@ export default function NavBarTarjetas() {
                       aria-current={item.current ? 'page' : undefined}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -64,10 +63,9 @@ export default function NavBarTarjetas() {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <Link
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  to={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
@@ -75,14 +73,12 @@ export default function NavBarTarjetas() {
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
         </>
       )}
     </Disclosure>
-    
-  )
-
+  );
 }

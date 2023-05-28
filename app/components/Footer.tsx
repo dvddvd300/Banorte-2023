@@ -1,4 +1,6 @@
-export function Footer({ t }: { t: any }) {
+import { useTranslation } from "react-i18next";
+
+export function Footer({ t }: { t: any}) {
   return (
 
 
@@ -6,6 +8,12 @@ export function Footer({ t }: { t: any }) {
       w-full h-18 bg-repeat-x bg-[url(/static/patern.png)]  ">
       <div>
         <img src="../static/Banorte-Logo.png" className="h-25 w-60" alt="Banorte" />
+        <div className="btn-group bg-transparent">
+          <button className="btn btn-xs border-none bg-rojobanorte"><img src="../static/InstaBlanco.png" className="h-10 w-10" alt="Instagram" /></button>
+          <button className="btn btn-xs border-none bg-rojobanorte"><img src="../static/FaceBookBlanco.png" className="h-10 w-10" alt="FaceBook" /></button>
+          <button className="btn btn-xs border-none bg-rojobanorte"><img src="../static/YtBlanco.png" className="h-10 w-10" alt="Youtube" /></button>
+          <button className="btn btn-xs border-none bg-rojobanorte"><img src="../static/TwBlanco.png" className="h-10 w-10" alt="Instagram" /></button>
+        </div>
       </div>
       <div>
         <span className="footer-title  ">Servicios</span>

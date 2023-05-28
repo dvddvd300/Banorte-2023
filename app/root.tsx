@@ -82,7 +82,9 @@ function Document({ children, title, }: { children: React.ReactNode; title?: str
   return (
     <html lang={locale} dir={i18n.dir()} data-theme="light">
       <head>
-        {title ? <title>{title}</title> : null}
+        {title ? <title>{title}</title> : null}  
+        <script src="heatmap.min.js"></script>
+        <script src="script.js"></script>
         <Meta />
         <meta property="og:url" content="https://banorte-2023.pages.dev/" />
         <meta property="og:type" content="website" />
@@ -121,9 +123,6 @@ function Layout({ children }: React.PropsWithChildren<{}>) {
       <Header t={t} />
         <div className="grow flex flex-col">
           <Outlet />
-        </div>
-        <div className="flex-grow">
-          <StickyF t={t} />
         </div>
         <div className="flex-none ">
           <Footer t={t} />
