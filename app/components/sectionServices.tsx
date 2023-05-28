@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from './section';
+import { useTranslation } from "react-i18next";
 
 const people = [
   {
@@ -23,15 +24,16 @@ const people = [
 ];
 
 export default function Example() {
-  return (
+  let { t } = useTranslation("Inicio");
+  return ( 
     <Section delay={0.1}>
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Servicios de vanguardia, justo lo que te mereces.</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{t("Servicios de vanguardia, justo lo que te mereces.")}</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Los servicios de Banorte son excepcionales, brindamos soluciones financieras confiables y eficientes para cada tipo persona.
-              Con una amplia gama de productos y oferta de servicios, su atención es insuperable.
+              {t("Los servicios de Banorte son excepcionales, brindamos soluciones financieras confiables y eficientes para cada tipo persona. Con una amplia gama de productos y oferta de servicios, su atención es insuperable.")}
+              
             </p>
           </div>
           <ul
