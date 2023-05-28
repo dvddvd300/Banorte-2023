@@ -31,9 +31,9 @@ export default function HeroOpcionesPreferente() {
 
   export function HeroOpcionesPreferenteDos() {
     return (
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero min-h-screen bg-base-100">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src="/static/imagen-preferente-2.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+          <img src="/static/imagen-preferente-2.jpg" className="max-w-xs rounded-lg shadow-2xl" />
           <div>
             <h1 className="text-5xl font-bold">Productos Exclusivos</h1>
             <p className="py-6">
@@ -86,6 +86,7 @@ export default function HeroOpcionesPreferente() {
       </div>
     );
   }
+  
 
   export function HeroOpcionesPreferenteTres() {
     return (

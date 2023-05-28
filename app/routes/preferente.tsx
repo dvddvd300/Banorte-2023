@@ -17,8 +17,8 @@ export let loader: LoaderFunction = async ({ request }) => {
   
     return (
       <>
-      <HeroPreferente/>
-      <HeroOpcionesPreferente/>
+    <HeroPreferente/>
+    <HeroOpcionesPreferente/>
     <HeroOpcionesPreferenteDos/>
     <HeroOpcionesPreferenteTres/>
 
