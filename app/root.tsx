@@ -86,6 +86,9 @@ function Document({ children, title, }: { children: React.ReactNode; title?: str
         <script src="heatmap.min.js"></script>
         <script src="script.js"></script>
         <Meta />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/>
         <meta property="og:url" content="https://banorte-2023.pages.dev/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Banorte | El Banco Fuerte de México" />
