@@ -14,6 +14,12 @@ const people = [
     imageUrl: '/static/cuenta-digital-banorte.png',
     linkUrl: 'routes/cuenta',
   },
+  {
+    name: 'Banca Preferente',
+    role: 'Conoce la nueva cuenta enlace digital, la cuenta que te permite realizar tus operaciones bancarias desde tu celular.',
+    imageUrl: '/static/banorte-web.jpg',
+    linkUrl: '/preferente',
+  },
 ];
 
 export default function Example() {
