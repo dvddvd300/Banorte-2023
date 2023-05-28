@@ -3,11 +3,11 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Clásica', href: '#', current: true },
-  { name: 'Banorte Por Ti', href: '#', current: false },
-  { name: 'Básica Nomina', href: '#', current: false },
-  { name: 'Oro', href: '#', current: false },
-  { name: 'Mujer Banorte', href: '#', current: false },
+  { name: 'Clásica', href: '/tarjetascredito/clasica', current: false },
+  { name: 'Banorte Por Ti', href: '/tarjetascredito/porti', current: false },
+  { name: 'Básica Nomina', href: '/tarjetascredito/basicanomina', current: false },
+  { name: 'Oro', href: '/tarjetascredito/oro', current: false },
+  { name: 'Mujer Banorte', href: '/tarjetascredito/mujerbanorte', current: false },
   
 ]
 

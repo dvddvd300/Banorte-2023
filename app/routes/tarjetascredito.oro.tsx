@@ -1,11 +1,9 @@
 import { ActionFunction, LoaderFunction } from "@remix-run/cloudflare";
 import { Link, useLoaderData } from "@remix-run/react";
 import { useTranslation } from "react-i18next";
+import { Oro } from "~/components/heroOpcionesTarjetas";
 import HeroTarjetas from "~/components/heroTarjetas";
 import NavBarTarjetas from "~/components/navbarTarjetas";
-import Clasica, { Oro, PorTi,BasicaNomina,MujerBanorte} from "~/components/heroOpcionesTarjetas";
-
-
 
 
 export let loader: LoaderFunction = async ({ request }) => {
@@ -21,8 +19,7 @@ export let loader: LoaderFunction = async ({ request }) => {
 
       <HeroTarjetas/>
       <NavBarTarjetas/>
-      { Clasica() }
-      { BasicaNomina() }
+      { Oro() }
 
         
     </>

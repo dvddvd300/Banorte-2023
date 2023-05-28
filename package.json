@@ -13,7 +13,7 @@
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.17",
     "@hotjar/browser": "^1.0.7",
-    "@remix-run/cloudflare": "^1.16.0",
+    "@remix-run/cloudflare": "^1.16.1",
     "@remix-run/cloudflare-pages": "^1.15.0",
     "@remix-run/react": "^1.16.0",
     "@tailwindcss/forms": "^0.5.3",

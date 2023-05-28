@@ -6,7 +6,7 @@ const people = [
     name: 'Tarjetas de Crédito',
     role: 'Encuentra la mejor tarjeta de crédito para ti, conoce sus beneficios y comienza a disfrutar de sus ventajas.',
     imageUrl: '/static/tarjetas-banorte.png',
-    linkUrl: '/indexTarjetasCredito',
+    linkUrl: '/tarjetascredito',
   },
   {
     name: 'Cuenta enlace digital',
