@@ -1,6 +1,5 @@
 import Section from './section'
 
-
 const people = [
   {
     name: 'Tarjetas de Crédito',
