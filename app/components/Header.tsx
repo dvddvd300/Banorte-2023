@@ -35,7 +35,7 @@ export function Header({ t }: any) {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 
-              <li><Link to="/preferente" className="text-base-content">
+              <li><Link to="r/preferente" className="text-base-content">
                 {t("preferente")}
               </Link></li>
               <li><Link to="/pymes" className="text-base-content">
