@@ -1,6 +1,9 @@
 export function Footer({ t }: { t: any }) {
   return (
-    <footer className="footer text-white p-10 bg-rojobanorte text-[color:white]">
+
+
+      <footer className="footer text-white p-10 bg-rojobanorte text-[color:white] shadow-sm bg-rojobanorte text-neutral-content col-span-1 xl:col-span-3
+      w-full h-18 bg-repeat-x bg-[url(/static/patern.png)]  ">
       <div>
         <img src="../static/Banorte-Logo.png" className="h-25 w-60" alt="Banorte" />
       </div>
