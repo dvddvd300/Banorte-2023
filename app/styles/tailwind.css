@@ -3229,6 +3229,10 @@ html {
   border-width: 0;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -3250,10 +3254,6 @@ html {
   top: -2rem;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -3268,6 +3268,14 @@ html {
 
 .top-px {
   top: 1px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-16 {
+  top: 4rem;
 }
 
 .isolate {
@@ -3357,10 +3365,6 @@ html {
   margin-left: 0.25rem;
 }
 
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
 .mr-4 {
   margin-right: 1rem;
 }
@@ -3403,6 +3407,18 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .block {
@@ -3485,12 +3501,16 @@ html {
   height: 1.75rem;
 }
 
-.h-\[60vh\] {
-  height: 60vh;
-}
-
 .h-\[70vh\] {
   height: 70vh;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-\[60vh\] {
+  height: 60vh;
 }
 
 .max-h-16 {
@@ -3569,6 +3589,10 @@ html {
   width: 100%;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -3587,6 +3611,10 @@ html {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .max-w-sm {
@@ -3687,6 +3715,10 @@ html {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -3744,16 +3776,16 @@ html {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -4006,16 +4038,16 @@ html {
   padding-bottom: 0.25rem;
 }
 
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
 .pl-1 {
   padding-left: 0.25rem;
 }
 
 .pr-10 {
   padding-right: 2.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .pr-2 {
@@ -4032,6 +4064,10 @@ html {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .align-middle {
@@ -4089,12 +4125,12 @@ html {
   font-weight: 500;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .font-semibold {
   font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .normal-case {
@@ -4301,6 +4337,10 @@ html {
   --tw-ring-inset: inset;
 }
 
+.focus\:ring-offset-2:focus {
+  --tw-ring-offset-width: 2px;
+}
+
 .focus-visible\:outline:focus-visible {
   outline-style: solid;
 }
@@ -4352,6 +4392,10 @@ html {
 
   .sm\:items-stretch {
     align-items: stretch;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
   }
 
   .sm\:justify-center {
@@ -4489,6 +4533,10 @@ html {
 
   .lg\:mt-9 {
     margin-top: 2.25rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
