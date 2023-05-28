@@ -23,12 +23,12 @@ import { i18nCookie } from "./i18nCookie.js"
  
 import stylesUrl from './styles/tailwind.css';
 
-import Hotjar from '@hotjar/browser';
+// import Hotjar from '@hotjar/browser';
 
-const siteId = 3510413;
-const hotjarVersion = 6;
+// const siteId = 3510413;
+// const hotjarVersion = 6;
 
-Hotjar.init(siteId, hotjarVersion);
+// Hotjar.init(siteId, hotjarVersion);
 
 export function useChangeLanguage(locale: string) { 
   let { i18n } = useTranslation(); 
@@ -97,21 +97,6 @@ function Document({ children, title, }: { children: React.ReactNode; title?: str
         <link href="static/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 				<link rel="canonical" href="https://banorte-2023.pages.dev"/>
         <meta name="theme-color" content="#E30029"></meta>
-        <script
-              async
-              id="gtag-init"
-              dangerouslySetInnerHTML={{
-                __html: `
-                window._mfq = window._mfq || [];
-                (function() {
-                  var mf = document.createElement("script");
-                  mf.type = "text/javascript"; mf.defer = true;
-                  mf.src = "//cdn.mouseflow.com/projects/ad7e80f1-3a8e-4704-9bf8-e69b1111be8e.js";
-                  document.getElementsByTagName("head")[0].appendChild(mf);
-                })();
-              `,
-              }}
-            />
         <Links />
       </head>
       <body className="flex flex-col min-h-screen bg-base-300">
