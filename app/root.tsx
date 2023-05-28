@@ -18,7 +18,7 @@ import { themeChange } from "theme-change";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
-import { i18nCookie } from "./i18nCookie.js"
+import { i18nCookie } from "./i18nCookie.js" 
  
 import stylesUrl from './styles/tailwind.css';
 

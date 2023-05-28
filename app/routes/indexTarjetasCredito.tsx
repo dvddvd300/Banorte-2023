@@ -2,7 +2,8 @@ import { ActionFunction, LoaderFunction } from "@remix-run/cloudflare";
 import { Link, useLoaderData } from "@remix-run/react";
 import { useTranslation } from "react-i18next";
 import HeroTarjetas from "~/components/heroTarjetas";
-import NavBarTarjetas from "~/components/navBarTarjetas";
+import NavBarTarjetas from "~/components/navbarTarjetas";
+
 
 
 export let loader: LoaderFunction = async ({ request }) => {
