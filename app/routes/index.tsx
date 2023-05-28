@@ -1,7 +1,7 @@
 import { ActionFunction, LoaderFunction } from "@remix-run/cloudflare";
 import { Link, useLoaderData } from "@remix-run/react";
 import { useTranslation } from "react-i18next";
-import  Hero  from "../components/sectionServices";
+import Section from "~/components/sectionServices";
 import HeroMountain from "~/components/heroMountain";
 
 export let loader: LoaderFunction = async ({ request }) => {
@@ -16,7 +16,8 @@ export default function Index() {
     <>
     
       <HeroMountain/>
-      <Hero/>
+      <Section/>
+     
   </>
   );
 }
