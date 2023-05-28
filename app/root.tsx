@@ -17,6 +17,7 @@ import { useTranslation } from "react-i18next";
 import { themeChange } from "theme-change";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { StickyF } from "./components/StickyF";
 
 import { i18nCookie } from "./i18nCookie.js" 
  
@@ -136,8 +137,11 @@ function Layout({ children }: React.PropsWithChildren<{}>) {
         <div className="grow flex flex-col">
           <Outlet />
         </div>
+        <div className="flex-grow">
+          <StickyF t={t} />
+        </div>
         <div className="flex-none ">
-        <Footer t={t} />
+          <Footer t={t} />
         </div>
       </div>
     </>
