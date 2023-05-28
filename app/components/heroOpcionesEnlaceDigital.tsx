@@ -149,7 +149,7 @@ export function Facil() {
     return(
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <img src="https://www.banorte.com/wps/wcm/connect/banorte/20838b72-ae53-4c5b-834b-301f7fd754ba/Banorte-Suma-Menores.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_M202ICC0K05780AILUO1DR2004-20838b72-ae53-4c5b-834b-301f7fd754ba-o5KrG8a" />
+                <img src="https://www.banorte.com/wps/wcm/connect/banorte/14ace45b-da64-43f6-8252-d17c614151bb/Banorte-Enlace-Digital-Dci2021-410X290.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_M202ICC0K05780AILUO1DR2004-14ace45b-da64-43f6-8252-d17c614151bb-okthfnp" />
                 <div>
                     <h1 className="text-5xl font-bold">Banorte Fácil (Cuenta Básica Bancaria)</h1>
                     <p className="py-6">
