@@ -139,7 +139,7 @@ export default function Header() {
             className="dropdown dropdown-end z-50"
             tabIndex={0}
           >
-            <Link className="btn gap-1 normal-case btn-ghost" to="hhttps://www.banorte.com/wps/portal/banorte/Home/servicios-en-linea/banca-digital/banco-linea/preguntas-frecuentes/chat-banorte/">
+            <Link className="btn gap-1 normal-case btn-ghost" to="https://www.banorte.com/wps/portal/banorte/Home/servicios-en-linea/banca-digital/banco-linea/preguntas-frecuentes/chat-banorte/">
               <svg 
               width="20"
               height="20"
