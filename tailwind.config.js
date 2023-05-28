@@ -14,6 +14,10 @@ module.exports = {
       banorteavisos: '#FFA400',
     },
     extend: {
+      fontFamily: {
+        'sans': ['Roboto'],
+        'gotham': ['Gotham'],
+      },
       aspectRatio: {
         '4/1': '4 / 1',
       },

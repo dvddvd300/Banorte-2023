@@ -248,7 +248,6 @@ export default function Header() {
                     />
                     <span className="flex flex-1 justify-between">
                       English
-                      <span className="badge badge-sm badge-ghost">beta</span>
                     </span>
                   </a>
                 </li>
