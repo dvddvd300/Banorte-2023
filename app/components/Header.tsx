@@ -3,12 +3,11 @@ import { Form, Link, useLoaderData } from "@remix-run/react";
 import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from "react";
 import { ReactI18NextChild } from "react-i18next";
 import { Theme } from "./choose-theme";
+import { useTranslation } from "react-i18next";
 
-
-
-export function Header({ t }: any) {
+export default function Header() {
    
-
+  let { t } = useTranslation("header");
   return (
     <header 
       className="sticky top-0 z-30 flex h-16 w-full justify-center backdrop-blur transition-all duration-100 text-base-content "
@@ -36,19 +35,19 @@ export function Header({ t }: any) {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 
               <li><Link to="r/preferente" className="text-base-content">
-                {t("preferente")}
+                {t("Preferente")}
               </Link></li>
               <li><Link to="/pymes" className="text-base-content">
-                {t("pymes")}
+                {t("Pymes")}
               </Link></li>
               <li><Link to="/empresas" className="text-base-content">
-                {t("empresas")}
+                {t("Empresas")}
               </Link></li>
               <li><Link to="/gobierno" className="text-base-content">
-                {t("gobierno")}
+                {t("Gobierno")}
               </Link></li>
               <li><Link to="/CasaDeBolsa" className="text-base-content">
-                {t("casa de bolsa")}
+                {t("Casa de Bolsa")}
               </Link></li>
               {/* <li tabIndex={0}>
                   <a className="justify-between">
@@ -72,19 +71,19 @@ export function Header({ t }: any) {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
           <li><Link to="/preferente">
-              {t("preferente")}
+              {t("Preferente")}
               </Link></li>
               <li><Link to="/pymes">
-              {t("pymes")}
+              {t("Pymes")}
               </Link></li>
               <li><Link to="/empresas">
-              {t("empresas")}
+              {t("Empresas")}
               </Link></li>
               <li><Link to="/gobierno">
-              {t("gobierno")}
+              {t("Gobierno")}
               </Link></li>
               <li><Link to="/CasaDeBolsa">
-              {t("casa de bolsa")}
+              {t("Casa de Bolsa")}
               </Link></li>
             {/* <li tabIndex={0}>
                 <a>

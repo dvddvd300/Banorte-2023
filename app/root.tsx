@@ -16,7 +16,7 @@ import { useTranslation } from "react-i18next";
 // import { useChangeLanguage } from "remix-i18next";
 import { themeChange } from "theme-change";
 import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
+import  Header  from "./components/Header";
 import { StickyF } from "./components/StickyF";
 
 import { i18nCookie } from "./i18nCookie.js" 
