@@ -3458,6 +3458,10 @@ html {
   height: 70vh;
 }
 
+.h-\[60vh\] {
+  height: 60vh;
+}
+
 .max-h-16 {
   max-height: 4rem;
 }
