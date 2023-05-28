@@ -8,7 +8,9 @@ export let loader: LoaderFunction = async ({ request }) => {
   let cf = request.cf;
   return {
     cf : cf,
+  };
 };
+
 
 export default function Index() {
   let { t } = useTranslation();
