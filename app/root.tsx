@@ -18,9 +18,16 @@ import { themeChange } from "theme-change";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
-import { i18nCookie } from "./i18nCookie.js"
+import { i18nCookie } from "./i18nCookie.js" 
  
 import stylesUrl from './styles/tailwind.css';
+
+import Hotjar from '@hotjar/browser';
+
+const siteId = 3510413;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
 
 export function useChangeLanguage(locale: string) { 
   let { i18n } = useTranslation(); 
@@ -51,7 +58,7 @@ export let meta: MetaFunction = () => {
 };
 
 export default function App() {
-  let { locale, domain } = useLoaderData<LoaderData>();
+  let { locale } = useLoaderData<LoaderData>();
   let { i18n } = useTranslation();
   let { t } = useTranslation();
   useChangeLanguage(locale);
