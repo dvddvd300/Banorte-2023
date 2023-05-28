@@ -4,11 +4,12 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 
 const navigation = [
-  { name: 'Clásica', href: '/tarjetascredito/clasica', current: false },
-  { name: 'Banorte Por Ti', href: '/tarjetascredito/porti', current: false },
-  { name: 'Básica Nomina', href: '/tarjetascredito/basicanomina', current: false },
-  { name: 'Oro', href: '/tarjetascredito/oro', current: false },
-  { name: 'Mujer Banorte', href: '/tarjetascredito/mujerbanorte', current: false },
+  { name: 'Enlace Digital', href: '/tarjetascredito/enlace-digital', current: false },
+  { name: 'Enlace Personal Banorte', href: '/tarjetascredito/personal', current: false },
+  { name: 'Enlace Dolares', href: '/tarjetascredito/dolares', current: false },
+  { name: 'Suma Menores', href: '/tarjetascredito/menores', current: false },
+  { name: 'Mujer Banorte', href: '/tarjetascredito/mujer-banorte', current: false },
+  { name: 'Banorte Facil', href: '/tarjetascredito/banortefacil', current: false }
   
 ]
 
