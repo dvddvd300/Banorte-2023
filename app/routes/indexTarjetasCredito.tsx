@@ -3,7 +3,9 @@ import { Link, useLoaderData } from "@remix-run/react";
 import { useTranslation } from "react-i18next";
 import HeroTarjetas from "~/components/heroTarjetas";
 import NavBarTarjetas from "~/components/navbarTarjetas";
-import HeroOpcionesTarjetas from "~/components/heroOpcionesTarjetas";
+import Clasica, { Oro, PorTi,BasicaNomina,MujerBanorte} from "~/components/heroOpcionesTarjetas";
+
+
 
 
 export let loader: LoaderFunction = async ({ request }) => {
@@ -19,7 +21,8 @@ export let loader: LoaderFunction = async ({ request }) => {
 
       <HeroTarjetas/>
       <NavBarTarjetas/>
-      <HeroOpcionesTarjetas/>
+      { Clasica() }
+      { BasicaNomina() }
 
         
     </>

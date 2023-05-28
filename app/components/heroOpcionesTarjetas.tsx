@@ -13,7 +13,7 @@ export default function Clasica() {
     </div>
   </div>
 </div>
-    )
+    );
 }
 
 export function PorTi() {
@@ -36,7 +36,7 @@ export function PorTi() {
     </div>
   </div>
 </div>
-    )
+    );
 }
 
 export function BasicaNomina() {
@@ -63,7 +63,7 @@ export function BasicaNomina() {
     </div>
   </div>
 </div>
-    )
+    );
 }
 
 export function Oro() {
@@ -91,7 +91,7 @@ export function Oro() {
     </div>
   </div>
 </div>
-    )
+    );
 }
 
 export function MujerBanorte() {
@@ -119,5 +119,5 @@ export function MujerBanorte() {
     </div>
   </div>
 </div>
-    )
+    );
 }
