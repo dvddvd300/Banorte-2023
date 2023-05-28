@@ -24,7 +24,14 @@ export function PorTi() {
         <div>
 
       <h1 className="text-5xl font-bold">Banorte Por Ti</h1>
-      <p className="py-6">La Tarjeta de Crédito Clásica de Banorte ofrece beneficios exclusivos, como la opción de pagar a 12 meses con una tasa de interés fija del 2.08% mensual. Durante los primeros 30 días, se pueden realizar compras a 6 meses sin intereses. La tarjeta brinda acceso a la banca digital para administrar el crédito y realizar consultas, descargas de estados de cuenta y aclaraciones. También incluye protección contra robo o extravío, así como cobertura para daño o robo de compras y reembolso de diferencia de precios. Otros beneficios incluyen servicios de domiciliación de pagos, tarjetas adicionales y descuentos en plataformas digitales. </p>
+      <p className="py-6">
+            En Banorte, nos gusta ayudarte con tu dia a dia. La tarjeta Banorte PorTi
+            esta diseñada para aquellas personas que buscan un regreso de efectivo de 
+            sus compras diarias. Con esta tarjeta, obtienes un 2% de reembolso en todas
+            tus compras. Este efectivo puede ser usado en los comercios afiliados a la
+            tarjeta: MacStore, Casa Ley, Liverpool, 7 Eleven y muchas más.
+        
+         </p>
       <button className="btn btn-primary">¡Tramita tu tarjeta ahora!</button>
     </div>
   </div>
