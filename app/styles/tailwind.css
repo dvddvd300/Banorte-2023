@@ -3232,6 +3232,10 @@ html {
   position: sticky;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .-top-8 {
   top: -2rem;
 }
@@ -3388,6 +3392,10 @@ html {
   margin-top: 2rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -3472,12 +3480,44 @@ html {
   height: 70vh;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-4\/5 {
+  height: 80%;
+}
+
+.h-px {
+  height: 1px;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
 
 .max-h-16 {
   max-height: 4rem;
+}
+
+.max-h-56 {
+  max-height: 14rem;
+}
+
+.max-h-20 {
+  max-height: 5rem;
 }
 
 .min-h-screen {
@@ -3843,6 +3883,11 @@ html {
   background-color: hsl(var(--s) / var(--tw-bg-opacity));
 }
 
+.bg-neutral-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
 }
@@ -3853,6 +3898,14 @@ html {
 
 .bg-\[url\(\/static\/patern\.png\)\] {
   background-image: url(/static/patern.png);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-repeat-x {
@@ -4254,6 +4307,18 @@ html {
   color: hsl(var(--ac) / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px) {
+  .lg\:hero-content {
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80rem;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
 .focus\:z-10:focus {
   z-index: 10;
 }
@@ -4441,6 +4506,10 @@ html {
     max-width: none;
   }
 
+  .lg\:max-w-screen-xl {
+    max-width: 1280px;
+  }
+
   .lg\:flex-none {
     flex: none;
   }
@@ -4469,6 +4538,11 @@ html {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .lg\:pb-6 {
