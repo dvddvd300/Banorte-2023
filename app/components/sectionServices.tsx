@@ -4,8 +4,7 @@ const people = [
   {
     name: 'Tarjetas de Crédito',
     role: 'Encuentra la mejor tarjeta de crédito para ti, conoce sus beneficios y comienza a disfrutar de sus ventajas. ',
-    imageUrl:
-      'https://i.imgur.com/yus8jXX.png',
+    imageUrl:'/static/tarjetas-banorte.png',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -13,8 +12,7 @@ const people = [
   {
     name: 'Cuenta enlace digital',
     role: 'Conoce la nueva cuenta enlace digital, la cuenta que te permite realizar tus operaciones bancarias desde tu celular.',
-    imageUrl:
-      'https://i.imgur.com/HgKOwBh.png',
+    imageUrl:'/static/cuenta-digital-banorte.png',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -30,9 +28,9 @@ export default function Example() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Servicios de vanguardia, justo lo que te mereces.</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
           Los servicios de Banorte son excepcionales,
-          brindan soluciones financieras confiables y eficientes para cada persona.
+          brindamos soluciones financieras confiables y eficientes para cada tipo persona.
           Con una amplia gama de productos y oferta de servicios,
-          su atención al cliente es insuperable.
+          su atención es insuperable.
           </p>
         </div>
         <ul
