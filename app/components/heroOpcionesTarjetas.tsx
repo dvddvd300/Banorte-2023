@@ -38,3 +38,58 @@ export function PorTi() {
 </div>
     )
 }
+
+export function BasicaNomina() {
+    return(
+        <div className="hero min-h-screen bg-base-200">
+            <div className="hero-content flex-col lg:flex-row-reverse">
+            <img src="https://www.banorte.com/wps/wcm/connect/banorte/90528e7a-38cb-4129-92d0-ca02a7eaad16/Banorte-TDC-Basica-Nomina-410x290.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_M202ICC0K05780AILUO1DR2004-90528e7a-38cb-4129-92d0-ca02a7eaad16-osl4j-X" />
+        <div>
+
+      <h1 className="text-5xl font-bold">Basica Nomina</h1>
+      <p className="py-6">
+      Para aquellos que llevan un rato en Banorte, la Tarjeta Básica Nómina se ofrece por invitación y brinda beneficios 
+      para las compras diarias. Es gratuita de por vida y se puede activar llamando 
+      al banco. Incluye Blindaje Banorte, que protege contra robo o extravío de la 
+      tarjeta hasta 48 horas antes del reporte sin costo adicional. El pago se 
+      domicilia a la cuenta de nómina Banorte. La banca digital ofrece servicios como 
+      revisar la línea de crédito, bloquear y desbloquear la tarjeta, y generar una 
+      tarjeta digital para compras en línea. Los pagos se pueden realizar a través de 
+      Banorte Móvil, Banco en Línea, sucursales y cajeros Banorte, así como en otros 
+      bancos y corresponsalías, con posibles comisiones adicionales.
+        
+         </p>
+      <button className="btn btn-primary">¡Tramita tu tarjeta ahora!</button>
+    </div>
+  </div>
+</div>
+    )
+}
+
+export function Oro() {
+    return(
+        <div className="hero min-h-screen bg-base-200">
+            <div className="hero-content flex-col lg:flex-row-reverse">
+            <img src="https://www.banorte.com/wps/wcm/connect/banorte/0d8c7e4b-0958-40f5-8e5f-4dd80275e021/Banorte-TDC-Oro-410x290.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_M202ICC0K05780AILUO1DR2004-0d8c7e4b-0958-40f5-8e5f-4dd80275e021-otIjZ-Q" />
+        <div>
+
+      <h1 className="text-5xl font-bold">Oro</h1>
+      <p className="py-6">
+      La Tarjeta de Crédito Oro de Banorte ofrece valiosos beneficios durante todo 
+      el año. En comercios educativos, se puede pagar a seis meses con una tasa fija 
+      del 22% anual. Además, se obtienen seis meses sin intereses en las compras 
+      realizadas durante los primeros 30 días. La tarjeta brinda acceso a la banca 
+      digital, donde se puede gestionar la cuenta, consultar saldos, descargar estados
+      de cuenta y bloquear la tarjeta. También incluye el programa Recompensa Total 
+      Banorte y ofrece la opción de transferir saldos de otras tarjetas. Además, 
+      cuenta con protección de precios, protección de compras y garantía extendida. 
+      Se disfrutan descuentos y beneficios en plataformas digitales, así como opciones 
+      para compras desde casa.
+        
+         </p>
+      <button className="btn btn-primary">¡Tramita tu tarjeta ahora!</button>
+    </div>
+  </div>
+</div>
+    )
+}
