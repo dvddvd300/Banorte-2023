@@ -14,8 +14,8 @@ export function Header({ t }: any) {
       className="sticky top-0 z-30 flex h-16 w-full justify-center backdrop-blur transition-all duration-100 text-base-content "
       
       >
-      <nav className="navbar sticky shadow-lg bg-rojobanorte text-neutral-content col-span-1 xl:col-span-3
-      w-full h-18 bg-repeat-x bg-[url(/static/patern.png)] 
+      <nav className="navbar sticky shadow-lg bg-rojobanorte col-span-1 xl:col-span-3
+      w-full h-18 bg-repeat-x bg-[url(/static/patern.png)] text-[color:white]
       " >
         <div className="navbar-start">
           <div className="dropdown">
@@ -105,7 +105,37 @@ export function Header({ t }: any) {
                       <input type="text" placeholder="Search" className="input input-ghost" />
                   </div>
                 </div> */}
-          {/* <div
+          <div
+            title="Encuentra tu sucursal más cercana"
+            className="dropdown dropdown-end z-50"
+            tabIndex={0}
+          >
+            <Link className="btn gap-1 normal-case btn-ghost" to="https://www.banorte.com/cms/geolocalizacion-banorte/v3/gmaps.html?v=12&type=d&key=AIzaSyAbliZaCXEUaKtS--Az0kGEF2BzN2ciGMo">
+              <svg 
+              width="20"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block h-5 w-5 stroke-current md:h-6 md:w-6"
+              stroke-width="1.5" >
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+  </svg>
+
+              <span className="hidden md:inline">{t("Mapa")}</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="12px"
+                height="12px"
+                className="ml-1 hidden sm:inline-block">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+</svg>
+
+
+            </Link>
+            
+          </div>
+
+          <div
             title="Change Theme"
             className="dropdown dropdown-end z-50"
             tabIndex={0}
@@ -140,7 +170,7 @@ export function Header({ t }: any) {
             <div className="dropdown-content bg-base-200 text-base-content rounded-t-box rounded-b-box top-px max-h-96 h-[70vh] w-52 overflow-y-auto shadow-2xl mt-16">
               <Theme />
             </div>
-          </div> */}
+          </div>
 
           {/* lang */}
           <div title="Change Language" className="dropdown dropdown-end">
