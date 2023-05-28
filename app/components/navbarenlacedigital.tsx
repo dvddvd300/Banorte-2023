@@ -4,12 +4,12 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 
 const navigation = [
-    { name: 'Enlace Digital', href: '/app/routes/enlacedigital-digital.tsx', current: false },
-    { name: 'Enlace Personal Banorte', href: '/app/routes/enlacedigital-personal.tsx', current: false },
-    { name: 'Enlace Dolares', href: '/app/routes/enlacedigital-dolares.tsx', current: false },
-    { name: 'Suma Menores', href: '/app/routes/enlacedigital-menores.tsx', current: false },
-    { name: 'Mujer Banorte', href: '/app/routes/enlacedigital-mujeres.tsx', current: false },
-    { name: 'Banorte Facil', href: '/app/routes/enlacedigital-facil.tsx', current: false }
+    { name: 'Enlace Digital', href: '/enlacedigital/enlacedigital-digital', current: false },
+    { name: 'Enlace Personal Banorte', href: '/enlacedigital/enlacedigital-personal', current: false },
+    { name: 'Enlace Dolares', href: '/enlacedigital/enlacedigital-dolares', current: false },
+    { name: 'Suma Menores', href: '/enlacedigital/enlacedigital-menores', current: false },
+    { name: 'Mujer Banorte', href: '/enlacedigital/enlacedigital-mujeres', current: false },
+    { name: 'Banorte Facil', href: '/enlacedigital/enlacedigital-facil', current: false }
   ];
 
 function classNames(...classes: string[]) {
