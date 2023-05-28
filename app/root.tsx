@@ -45,7 +45,7 @@ export let links: LinksFunction = () => {
 export let meta: MetaFunction = () => {
   return {
     charset: "utf-8",
-    title: "Experiencia360",
+    title: "Banorte",
     viewport: "width=device-width,initial-scale=1",
   };
 };
@@ -76,17 +76,19 @@ function Document({ children, title, }: { children: React.ReactNode; title?: str
       <head>
         {title ? <title>{title}</title> : null}
         <Meta />
-        <link rel="apple-touch-icon" sizes="180x180" href="https://staticcontent.360exp.net/apple-touch-icon.png"></link>
-        <link rel="icon" type="image/png" sizes="32x32" href="https://staticcontent.360exp.net/favicon-32x32.png"></link>
-        <link rel="icon" type="image/png" sizes="192x192" href="https://staticcontent.360exp.net/android-chrome-192x192.png"></link>
-        <link rel="icon" type="image/png" sizes="16x16" href="https://staticcontent.360exp.net/favicon-16x16.png"></link>
-        <link rel="manifest" href="https://staticcontent.360exp.net/site.webmanifest"></link>
-        <link rel="mask-icon" href="https://staticcontent.360exp.net/safari-pinned-tab.svg" color="#040410"></link>
-        <link rel="shortcut icon" href="https://staticcontent.360exp.net/favicon.ico"></link>
-        <meta name="msapplication-TileColor" content="#da532c"></meta>
-        <meta name="msapplication-TileImage" content="https://staticcontent.360exp.net/mstile-144x144.png"></meta>
-        <meta name="msapplication-config" content="https://staticcontent.360exp.net/browserconfig.xml"></meta>
-        <meta name="theme-color" content="#040410"></meta>
+        <meta property="og:url" content="https://banorte-2023.pages.dev/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Banorte | El Banco Fuerte de México" />
+        <meta property="og:description" content="¡Bienvenido a Banorte! Administra tus finanzas con Banco en línea, solicita tu tarjeta de crédito Banorte, cambia a Nómina Banorte, solicita un crédito hipotecario, fondos de inversión y más." />
+        <meta property="og:image" content="static/redes_sociales.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content="¡Bienvenido a Banorte! Administra tus finanzas con Banco en línea, solicita tu tarjeta de crédito Banorte, cambia a Nómina Banorte, solicita un crédito hipotecario, fondos de inversión y más." />
+        <meta name="twitter:title" content="Banorte | El Banco Fuerte de México" />
+        <meta name="description" content="¡Bienvenido a Banorte! Administra tus finanzas con Banco en línea, solicita tu tarjeta de crédito Banorte, cambia a Nómina Banorte, solicita un crédito hipotecario, fondos de inversión y más."/>
+        <meta name="autor" content="Banorte"/>
+        <link href="static/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+				<link rel="canonical" href="https://banorte-2023.pages.dev"/>
+        <meta name="theme-color" content="#E30029"></meta>
         <Links />
       </head>
       <body className="flex flex-col min-h-screen bg-base-300">

@@ -91,16 +91,6 @@ export const headers: HeadersFunction = () => {
   };
 };
 
-
-// export let meta: MetaFunction = () => {
-//   let { event } = useLoaderData();
-//   //definir titulo y descripcion dependiendo de la informacion y el estatus del evento (publico o privado)
-//   return {
-//     title: event?.title ?? "" + " | " + "360Exp",
-//   };
-// };
-
-
 export default function Index() {
   let { event } = useLoaderData();
 

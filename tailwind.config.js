@@ -1,6 +1,9 @@
 module.exports = {
   content: ['./app/**/*.tsx', './app/**/*.ts'],
   theme: {
+    minHeight: {
+      '1/2': '50%',
+    },
     colors: {
       rojobanorte: '#E30029',
       grisbanorte: '#5B6670',
