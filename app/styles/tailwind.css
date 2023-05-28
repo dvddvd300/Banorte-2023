@@ -3211,6 +3211,10 @@ html {
   border-width: 0;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -3250,6 +3254,10 @@ html {
 
 .left-0 {
   left: 0px;
+}
+
+.top-16 {
+  top: 4rem;
 }
 
 .isolate {
@@ -3581,6 +3589,10 @@ html {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .flex-1 {
