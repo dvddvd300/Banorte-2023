@@ -136,6 +136,35 @@ export function Header({ t }: any) {
           </div>
 
           <div
+            title="Encuentra tu sucursal más cercana"
+            className="dropdown dropdown-end z-50"
+            tabIndex={0}
+          >
+            <Link className="btn gap-1 normal-case btn-ghost" to="hhttps://www.banorte.com/wps/portal/banorte/Home/servicios-en-linea/banca-digital/banco-linea/preguntas-frecuentes/chat-banorte/">
+              <svg 
+              width="20"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block h-5 w-5 stroke-current md:h-6 md:w-6"
+              strokeWidth="1.5" >
+  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+  </svg>
+
+              <span className="hidden md:inline">{t("Ayuda")}</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" width="12px"
+                height="12px"
+                className="ml-1 hidden sm:inline-block">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+</svg>
+
+
+            </Link>
+            
+          </div>
+
+          <div
             title="Change Theme"
             className="dropdown dropdown-end z-50"
             tabIndex={0}
