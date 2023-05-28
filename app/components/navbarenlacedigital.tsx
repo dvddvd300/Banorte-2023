@@ -4,14 +4,13 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 
 const navigation = [
-  { name: 'Enlace Digital', href: '/tarjetascredito/enlace-digital', current: false },
-  { name: 'Enlace Personal Banorte', href: '/tarjetascredito/personal', current: false },
-  { name: 'Enlace Dolares', href: '/tarjetascredito/dolares', current: false },
-  { name: 'Suma Menores', href: '/tarjetascredito/menores', current: false },
-  { name: 'Mujer Banorte', href: '/tarjetascredito/mujer-banorte', current: false },
-  { name: 'Banorte Facil', href: '/tarjetascredito/banortefacil', current: false }
-  
-]
+    { name: 'Enlace Digital', href: '/app/routes/enlacedigital-digital.tsx', current: false },
+    { name: 'Enlace Personal Banorte', href: '/app/routes/enlacedigital-personal.tsx', current: false },
+    { name: 'Enlace Dolares', href: '/app/routes/enlacedigital-dolares.tsx', current: false },
+    { name: 'Suma Menores', href: '/app/routes/enlacedigital-menores.tsx', current: false },
+    { name: 'Mujer Banorte', href: '/app/routes/enlacedigital-mujeres.tsx', current: false },
+    { name: 'Banorte Facil', href: '/app/routes/enlacedigital-facil.tsx', current: false }
+  ];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
