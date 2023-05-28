@@ -1,4 +1,6 @@
-export function Footer({ t }: { t: any }) {
+import { useTranslation } from "react-i18next";
+
+export function Footer({ t }: { t: any}) {
   return (
 
 

@@ -124,9 +124,6 @@ function Layout({ children }: React.PropsWithChildren<{}>) {
         <div className="grow flex flex-col">
           <Outlet />
         </div>
-        <div className="flex-grow">
-          <StickyF t={t} />
-        </div>
         <div className="flex-none ">
           <Footer t={t} />
         </div>
