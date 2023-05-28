@@ -93,3 +93,31 @@ export function Oro() {
 </div>
     )
 }
+
+export function MujerBanorte() {
+    return(
+        <div className="hero min-h-screen bg-base-200">
+            <div className="hero-content flex-col lg:flex-row-reverse">
+            <img src="https://www.banorte.com/wps/wcm/connect/banorte/bbdcde3d-771f-4e3c-af9f-00c1b7f27488/Banorte_Mujer_410x290.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_M202ICC0K05780AILUO1DR2004-bbdcde3d-771f-4e3c-af9f-00c1b7f27488-otIkdnP" />
+        <div>
+
+      <h1 className="text-5xl font-bold">Oro</h1>
+      <p className="py-6">
+            La Tarjeta Mujer Banorte ofrece beneficios exclusivos para las mujeres. 
+            Permite pagar a seis meses en comercios educativos con una tasa fija del 
+            22% anual y brinda seis meses sin intereses en las compras realizadas 
+            durante los primeros 30 días. La tarjeta brinda acceso a la banca digital 
+            para gestionar la cuenta, consultar saldos, descargar estados de cuenta 
+            y bloquear la tarjeta. Además, cuenta con el programa Recompensa Total 
+            Banorte y la opción de transferir saldos de otras tarjetas. Ofrece 
+            protección de precios, protección de compras y garantía extendida. 
+            También brinda descuentos y beneficios en plataformas digitales y opciones 
+            de compras desde casa.
+        
+         </p>
+      <button className="btn btn-primary">¡Tramita tu tarjeta ahora!</button>
+    </div>
+  </div>
+</div>
+    )
+}
